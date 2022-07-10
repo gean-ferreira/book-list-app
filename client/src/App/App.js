@@ -4,6 +4,11 @@ import React, { useState } from "react";
 export default function App() {
   const [formValues, setFormValues] = useState();
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(formValues);
+  }
+
   const handleChangeValues = (e) => {
     setFormValues((prevValues) => ({
       ...prevValues,
@@ -13,7 +18,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h1>Livro</h1>
         <label for="name">Nome do livro:</label>
         <input type="text" name="name" onChange={handleChangeValues} required />
@@ -28,6 +33,7 @@ export default function App() {
           <option value="Humor">Humor</option>
           <option value="Romance">Romance</option>
         </select>
+        <button type="submit">Adicionar</button>
       </form>
     </div>
   );
