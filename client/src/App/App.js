@@ -5,14 +5,12 @@ export default function App() {
     <div className="App">
       <form>
         <h1>Livro</h1>
-        <label>Nome do livro:</label>
-        <input type="text" />
-        <label>Preço:</label>
-        <input type="text" />
-        <label>Nome do livro:</label>
-        <input type="text" />
+        <label for="name" >Nome do livro:</label>
+        <input type="text" name="name" required/>
+        <label for="price" >Preço:</label>
+        <input type="text" name="price" />
         <label for="genre">Escolha o gênero:</label>
-        <select name="genre">
+        <select name="genre" required>
           <option value="">Selecione aqui</option>
           <option value="Autoajuda">Autoajuda</option>
           <option value="Ficção">Ficção</option>
