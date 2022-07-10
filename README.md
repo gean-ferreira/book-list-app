@@ -1,0 +1,1 @@
+Nest App o usuário poderá criar uma lista dos livros que ele comprará para ler ao longo do ano. Sendo assim, terá que colocar o nome do livro, seu preco e gênero.
