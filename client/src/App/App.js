@@ -20,11 +20,11 @@ export default function App() {
     <div className="App">
       <form onSubmit={handleSubmit}>
         <h1>Livro</h1>
-        <label for="name">Nome do livro:</label>
+        <label htmlFor="name">Nome do livro:</label>
         <input type="text" name="name" onChange={handleChangeValues} required />
-        <label for="price">Preço:</label>
+        <label htmlFor="price">Preço:</label>
         <input type="text" name="price" onChange={handleChangeValues} />
-        <label for="genre">Escolha o gênero:</label>
+        <label htmlFor="genre">Escolha o gênero:</label>
         <select name="genre" onChange={handleChangeValues} required>
           <option value="">Selecione aqui</option>
           <option value="Autoajuda">Autoajuda</option>
